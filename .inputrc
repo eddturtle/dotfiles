@@ -1,6 +1,13 @@
 "\C-[[A": history-search-backward
 "\C-[[B": history-search-forward
 
+# https://www.reddit.com/r/commandline/comments/kbeoe/you_can_make_readline_and_bash_much_more_user/
+
+# https://coderwall.com/p/oqtj8w/the-single-most-useful-thing-in-bash
+
 set completion-ignore-case on
+set completion-prefix-display-length 2
+set completion-map-case on
+
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
