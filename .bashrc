@@ -134,5 +134,8 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export ANDROID_HOME=/home/edd/Programs/android-sdk-linux
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ~="cd ~"
 
 alias ip="ifconfig|grep Bcast"  # List IPs
