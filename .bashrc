@@ -121,21 +121,8 @@ export EDITOR="$VISUAL"
 
 export HOME="/home/edd"
 
-# Git Aliases
-alias gs="git status"
-alias gc="git commit -am "
-
-# PHP Laravel
-alias pa="php artisan"
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export ANDROID_HOME=/home/edd/Programs/android-sdk-linux
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-alias ..="cd .."
-alias ...="cd ../.."
-alias ~="cd ~"
-
-alias ip="ifconfig|grep Bcast"  # List IPs
