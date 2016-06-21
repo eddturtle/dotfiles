@@ -11,3 +11,8 @@ alias gc="git commit -am "
 
 # LARAVEL
 alias pa="php artisan"
+
+alias install="sudo apt install"
+alias update="sudo apt update"
+alias upgrade="sudo apt upgrade"
+alias auto="update && upgrade"
