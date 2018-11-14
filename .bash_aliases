@@ -15,6 +15,7 @@ alias auto="update && upgrade"
 
 # GIT
 alias gs="git status"
+alias gd="git diff"
 alias gc="git commit -am "
 
 # LARAVEL
