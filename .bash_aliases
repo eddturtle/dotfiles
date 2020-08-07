@@ -13,10 +13,10 @@ alias update="sudo apt update"
 alias upgrade="sudo apt upgrade"
 alias auto="update && upgrade"
 
-# GIT
-alias gs="git status"
-alias gd="git diff"
-alias gc="git commit -am "
+# GIT https://askubuntu.com/a/642778/2304
+alias g="git"
+source /usr/share/bash-completion/completions/git
+__git_complete g __git_main
 
 # LARAVEL
 alias pa="php artisan"

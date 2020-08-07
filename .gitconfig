@@ -6,6 +6,10 @@
 	diff = auto
 	branch = auto
 [alias]
+	s = status
+	d = diff
+	co = checkout
+	br = branch
 	who = shortlog -s -n --no-merges
 	standup = shortlog --since=yesterday
 	today = shortlog --since=midnight
