@@ -1,6 +1,11 @@
 [user]
-	email = edd@designedbyaturtle.co.uk
+	signingkey = 
+	email =
 	name = Edd Turtle
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
 [color]
 	status = auto
 	diff = auto
