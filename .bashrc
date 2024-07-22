@@ -105,26 +105,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# https://www.reddit.com/r/linux/comments/7oc5mt/what_are_some_useful_things_you_put_on_your/
+cd() {
+    builtin cd "$@" && ls -lA
+}
+
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+export HISTSIZE=1000000                  # big big history
+export HISTFILESIZE=1000000              # big big history
+shopt -s histappend                      # append to history, don't overwrite it
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
-
-export HOME="/home/edd"
-
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export ANDROID_HOME=/home/edd/Programs/android-sdk-linux
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-
-
-# http://unix.stackexchange.com/questions/1288/preserve-bash-history-in-multiple-terminal-windows
-
-export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
-export HISTSIZE=100000                   # big big history
-export HISTFILESIZE=100000               # big big history
-shopt -s histappend                      # append to history, don't overwrite it
-
-# Save and reload the history after each command finishes
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
