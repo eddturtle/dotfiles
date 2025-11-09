@@ -20,6 +20,3 @@ __git_complete g __git_main
 
 alias gs="git status"
 alias gc="git commit -am "
-
-# LARAVEL
-alias pa="php artisan"
